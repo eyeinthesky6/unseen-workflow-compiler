@@ -142,15 +142,15 @@ If `compile_workflow` is not yet registered in the current host's tools, you can
 
 ### A. Install via Agent Skills CLI (Vercel `skills.sh` / Universal Skills Marketplace)
 ```bash
-npx skills add eyeinthesky6/unseen
+npx skills add eyeinthesky6/unseen-workflow-compiler
 ```
 
 ### B. Connect the Unseen MCP Compiler
-Choose **Remote HTTP** (hosted at `https://unseendocs.in/mcp` with an Unseen Bearer token) or **Local Stdio** (`npx -y unseen-mcp` with `OPENROUTER_API_KEY`):
+Choose **Remote HTTP** (hosted at `https://unseendocs.in/mcp` with an Unseen Bearer token) or **Local Stdio** (`npx -y github:eyeinthesky6/unseen-workflow-compiler` with `OPENROUTER_API_KEY`):
 
 - **Claude Code (Plugin Marketplace — installs both Skill + MCP Connector + `/compile-workflow`):**
   ```bash
-  /plugin marketplace add eyeinthesky6/unseen
+  /plugin marketplace add eyeinthesky6/unseen-workflow-compiler
   /plugin install unseen-workflow-compiler@unseen-agent-plugins
   ```
   Or add the MCP server directly:

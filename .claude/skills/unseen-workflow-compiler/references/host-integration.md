@@ -5,17 +5,18 @@ This reference describes how a host agent should install, configure, and interac
 ## Installation & Setup Across Hosts
 
 1. **Claude Code (Plugin + Skill + MCP):**
-   - `/plugin marketplace add eyeinthesky6/unseen`
+   - `/plugin marketplace add eyeinthesky6/unseen-workflow-compiler`
    - `/plugin install unseen-workflow-compiler@unseen-agent-plugins`
-   - Direct MCP: `claude mcp add --transport http unseen https://unseendocs.in/mcp` or `claude mcp add unseen -- npx -y unseen-mcp`
+   - Direct MCP: `claude mcp add --transport http unseen https://unseendocs.in/mcp` or `claude mcp add unseen -- npx -y github:eyeinthesky6/unseen-workflow-compiler`
 2. **Claude.ai & Claude Desktop:**
    - Remote Connector: `https://unseendocs.in/mcp` (Bearer token from `https://unseendocs.in/agents`)
    - Offline Desktop Bundle: `https://unseendocs.in/downloads/unseen.mcpb`
+   - Custom Skill Zip: `https://unseendocs.in/downloads/unseen-workflow-compiler-skill.zip`
 3. **VS Code / GitHub Copilot / Cursor / Windsurf:**
    - Extension bundle: `https://unseendocs.in/downloads/unseen-vscode.vsix` (`code --install-extension unseen-vscode.vsix`)
-   - Stdio MCP server: `npx -y unseen-mcp` with `OPENROUTER_API_KEY`
+   - Stdio MCP server: `npx -y github:eyeinthesky6/unseen-workflow-compiler` with `OPENROUTER_API_KEY`
 4. **Universal Agent Skills CLI (`skills.sh`):**
-   - `npx skills add eyeinthesky6/unseen`
+   - `npx skills add eyeinthesky6/unseen-workflow-compiler`
 5. **Live Machine-Readable Discovery:**
    - `https://unseendocs.in/llms.txt` and `https://unseendocs.in/llms-full.txt`
    - `https://unseendocs.in/.well-known/mcp.json` and `https://unseendocs.in/.well-known/agent.json`
