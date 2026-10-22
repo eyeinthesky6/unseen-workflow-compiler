@@ -1,0 +1,5 @@
+{
+  "name": "unseen-workflow-compiler",
+  "version": "0.1.0",
+  "description": "Prepare source-grounded workflow evidence, identify process gaps, and use the Unseen compiler connector when available."
+}

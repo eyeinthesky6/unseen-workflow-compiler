@@ -1,0 +1,27 @@
+# Smithery.ai MCP & Agent Skill Configuration
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+      - openrouterApiKey
+    properties:
+      openrouterApiKey:
+        type: string
+        description: OpenRouter API Key (sk-or-v1-...) used by the Unseen workflow compiler
+      openrouterModel:
+        type: string
+        default: google/gemini-3.5-flash-lite
+        description: Optional primary generation model
+  commandFunction:
+    |-
+    (config) => ({
+      command: 'node',
+      args: ['dist/index.cjs'],
+      env: {
+        OPENROUTER_API_KEY: config.openrouterApiKey,
+        ...(config.openrouterModel ? { OPENROUTER_MODEL: config.openrouterModel } : {})
+      }
+    })
+build:
+  dockerBuildPath: .

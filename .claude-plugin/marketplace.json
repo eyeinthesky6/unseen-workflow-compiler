@@ -1,0 +1,27 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "unseen-agent-plugins",
+  "description": "Installable Unseen workflow intelligence skills and connectors.",
+  "owner": {
+    "name": "Unseen"
+  },
+  "plugins": [
+    {
+      "name": "unseen-workflow-compiler",
+      "description": "Source-grounded workflow intelligence for SOPs, policies, spreadsheets, playbooks, and multi-document business processes.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Unseen"
+      },
+      "source": "./plugins/unseen-workflow-compiler",
+      "category": "productivity",
+      "keywords": [
+        "workflow",
+        "sop",
+        "process",
+        "flowchart",
+        "agent-skill"
+      ]
+    }
+  ]
+}

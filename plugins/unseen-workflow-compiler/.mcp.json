@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "unseen": {
+      "type": "http",
+      "url": "https://unseendocs.in/mcp"
+    }
+  }
+}

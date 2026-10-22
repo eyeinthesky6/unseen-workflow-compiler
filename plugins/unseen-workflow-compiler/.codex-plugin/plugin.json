@@ -1,0 +1,24 @@
+{
+  "name": "unseen-workflow-compiler",
+  "version": "0.1.0",
+  "description": "Source-grounded workflow intelligence for SOPs, policies, spreadsheets, playbooks, and multi-document business processes.",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Unseen Workflow Compiler",
+    "shortDescription": "Turn messy SOPs, policies, and spreadsheets into source-grounded flowcharts.",
+    "longDescription": "Compiles operational documents, SOPs, compliance policies, and playbooks into publication-ready visual flowcharts with verbatim source citations, deterministic $0 connector autofix, and bundled AI Enhance verification.",
+    "developerName": "Unseen Docs",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://unseendocs.in",
+    "privacyPolicyURL": "https://unseendocs.in/privacy",
+    "termsOfServiceURL": "https://unseendocs.in/terms",
+    "defaultPrompt": [
+      "Compile this SOP into a source-grounded flowchart using Unseen.",
+      "Detect all candidate workflows in this policy handbook and map the approval gates.",
+      "Autofix the connectors and run AI Enhance on this workflow visual."
+    ],
+    "brandColor": "#059669"
+  }
+}

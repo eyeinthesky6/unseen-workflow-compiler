@@ -1,0 +1,43 @@
+{
+  "name": "unseen-mcp",
+  "mcpName": "io.github.eyeinthesky6/unseen-workflow-compiler",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) server for Unseen - turn unstructured business documents, SOPs, and playbooks into source-grounded visual workflows.",
+  "type": "module",
+  "bin": {
+    "unseen-mcp": "bin/unseen-mcp.mjs"
+  },
+  "main": "./dist/index.cjs",
+  "files": [
+    "bin",
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node ./bin/unseen-mcp.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "workflow",
+    "diagram",
+    "flowchart",
+    "sop",
+    "claude",
+    "cursor",
+    "agent",
+    "excalidraw"
+  ],
+  "author": "Unseen <hello@unseendocs.in>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyeinthesky6/unseen.git",
+    "directory": "packages/unseen-mcp"
+  },
+  "homepage": "https://unseendocs.in"
+}

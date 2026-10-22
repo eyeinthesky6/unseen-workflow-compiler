@@ -1,0 +1,20 @@
+{
+  "name": "unseen-agent-plugins",
+  "interface": {
+    "displayName": "Unseen Agent Plugins"
+  },
+  "plugins": [
+    {
+      "name": "unseen-workflow-compiler",
+      "source": {
+        "source": "local",
+        "path": "./plugins/unseen-workflow-compiler"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
