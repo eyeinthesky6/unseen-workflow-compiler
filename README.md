@@ -24,21 +24,6 @@ The `unseen-mcp` server provides 3 primary tools:
 
 ---
 
-## 1-Click Installation (Smithery)
-
-If you use [Smithery.ai](https://smithery.ai):
-
-```bash
-npx -y @smithery/cli install unseen-mcp --client claude
-```
-
-Or for Cursor:
-```bash
-npx -y @smithery/cli install unseen-mcp --client cursor
-```
-
----
-
 ## Claude Desktop Configuration
 
 Add the following to your `claude_desktop_config.json`:
